@@ -42,7 +42,7 @@ body {
     and (-webkit-device-pixel-ratio: 3)
     and (orientation: portrait) {
 	.main-nav {
-		font-size: 0.5em;
+		font-size: 0.9em;
 		padding: 0; 
 	    }
 }
