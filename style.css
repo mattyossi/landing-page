@@ -37,15 +37,10 @@ body {
 }
 /*iphone X*/
 @media only screen 
-    and (min-device-width: 375px) 
-    and (min-device-height: 812px) 
-    and (-webkit-device-pixel-ratio: 3)
-    and (orientation: portrait) {
-	.main-nav {
-		font-size: 0.9em;
-		padding: 0; 
-	    }
-}
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { }
+
 ul {
   display: inline;
   margin: 20px;
@@ -91,7 +86,7 @@ a {
 	text-decoration: none;
 }
 .mainPicture {
-	height: 35vh;
+	height: 35vh;  /*will be 50% of the viewport height (window/browser)*/
 }
 .mainPage {
 	background-color: #a7a7a7;
