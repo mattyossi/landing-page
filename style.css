@@ -37,10 +37,15 @@ body {
 }
 /*iphone X*/
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) { }
-
+    and (min-device-width: 375px) 
+    and (min-device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3)
+    and (orientation: portrait) {
+	.main-nav {
+		font-size: 0.5em;
+		padding: 0; 
+	    }
+}
 ul {
   display: inline;
   margin: 20px;
