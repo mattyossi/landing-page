@@ -91,7 +91,7 @@ a {
 	text-decoration: none;
 }
 .mainPicture {
-	height: 35vh;  /*will be 50% of the viewport height (window/browser)*/
+	height: 35vh;
 }
 .mainPage {
 	background-color: #a7a7a7;
