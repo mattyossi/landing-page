@@ -37,7 +37,9 @@ body {
 /*iphone X*/
 @media only screen 
     and (device-width : 375px) 
-    and (device-height : 812px) 
+    and (device-height : 812px)
+    and (orientation : portrait)
+    and (orientation : landscape) 
     and (-webkit-device-pixel-ratio : 3) { }
 ul {
   display: inline;
