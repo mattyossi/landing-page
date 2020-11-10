@@ -1,3 +1,9 @@
+/*---------------------
+ Styles
+---------------------*/
+html {
+	font-size: 15px;	}
+
 body {
 	margin: auto 0;
 	font-family: arial;
@@ -5,82 +11,68 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
-}
-.zone {
-	font-size: 20px;
-	transition: all 0.3s linear;
-}
-/*.zone:hover {
-	-moz-box-shadow: 0px 5px 10px #888888;
-	-ms-box-shadow: 0px 5px 10px #888888;
-	-webkit-box-shadow: 0px 5px 10px #888888;
-	-o-box-shadow: 0px 5px 10px #888888;
-	box-shadow: 0px 5px 10px #888888;
-}*/
-.mainNav:hover {
-	color: orange;
-}
-.remainTop {
+	background-attachment: fixed;	}
+
+a {
+	color: white;
+	text-decoration: none;	}
+
+.zone:hover {
+	-moz-box-shadow: 1px 1px 1px 1px #888888;
+	-ms-box-shadow: 1px 1px 1px 1px #888888;
+	-webkit-box-shadow: 1px 1px 1px 1px #888888;
+	-o-box-shadow: 1px 1px 1px 1px #8888888;
+	box-shadow: 1px 1px 1px 1px #888888;	}
+
+.stickyTop {
 	position: fixed;
 	top: 0;
-	width: 100%;
-}
+	width: 100%;	}
 .mainNav {
 	display: flex;
 	list-style: none;
 	margin: 0;
-}
-.pushLeft {
-	margin-left: auto;
-}
+	background-color: #555;
+	opacity: 0.3;	}
 ul {
   display: inline;
   margin: 20px;
-  padding: 0px;
-}
+  padding: 0px;	}
 li {
-	padding: 20px;
-	color: white;
-}
-a {
-	color: white;
-	text-decoration: none;
-}
+	padding: 20px;	}
+.nav-Link {
+	transition: all 0.2s;	}
+.nav-Link:hover {
+	color: orange;	}
+.pushLeft {
+	margin-left: auto;	}
+
+
+
+/*---------------------
+ Heading
+---------------------*/
 .mainPicture {
 	height: 25vh;  /*will be 25% of the viewport height (window/browser)*/
 }
-.mainPage {
-	background-color: #a7a7a7;
-	opacity: 0.4;
-}
+
+/*---------------------
+ Content
+---------------------*/
 .grid-wrap {
 	display: grid;
 	grid-gap: 20px;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
-}
-/*h2 {
-	color: white;
-	font-family: script;
-	opacity: 0.89;
-	text-align: left;
-	margin-left: 20px;
-}*/
-/*h3 {
-	color: #f7880a;
-	font-family: script;
-	font-style: italic;
-}*/
+	grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
 }
 .box > img {
 	width: 100%;
 }
 .box {
 	background-color: #343a40;
-	opacity: 0.6;
+	opacity: 0.8;
 	padding: 50px;
-	margin: 10px;
-	border: 1px solid #a7a7a7;
+	margin: 15px;
+	border: 0.1px solid #a7a7a7;
 	border-radius: 10px;
 }
 footer {
@@ -89,6 +81,6 @@ footer {
 	font-family: script;
 	font-style: italic;
 	background-color: #000000;
-	opacity: 0.6;
+	opacity: 0.7;
 	margin-right: 20px;
 }
