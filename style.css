@@ -2,7 +2,7 @@
  Styles
 ---------------------*/
 html {
-	font-size: 90%;	}
+	font-size: 130%;	}
 
 body {
 	margin: auto 0;
@@ -14,6 +14,7 @@ body {
 	background-attachment: fixed;	}
 
 a {
+	font-size: 1em;
 	color: white;
 	text-decoration: none;	}
 
@@ -22,18 +23,20 @@ a {
 	-ms-box-shadow: 1px 1px 1px 1px #888888;
 	-webkit-box-shadow: 1px 1px 1px 1px #888888;
 	-o-box-shadow: 1px 1px 1px 1px #8888888;
-	box-shadow: 1px 1px 1px 1px #888888;	}
+	box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+	opacity: 0.95;	}
 
 .stickyTop {
 	position: fixed;
 	top: 0;
-	width: 100%;	}
+	width: 100%;
+	z-index: 1;	}
 .mainNav {
 	display: flex;
 	list-style: none;
 	margin: 0;
 	background-color: #555;
-	opacity: 0.3;	}
+	opacity: 0.85;	}
 ul {
   display: inline;
   margin: 20px;
@@ -48,12 +51,21 @@ li {
 	margin-left: auto;	}
 
 
+/* iPhone X ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/*Styles*/ 
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;	}
+.nav-Link {
+	font-size: 1em; }
+}
 
 /*---------------------
  Heading
 ---------------------*/
 .mainPicture {
-	height: 25vh;  /*will be 25% of the viewport height (window/browser)*/
+	height: 30vh;  /*will be 25% of the viewport height (window/browser)*/
 }
 
 /*---------------------
@@ -62,7 +74,7 @@ li {
 .grid-wrap {
 	display: grid;
 	grid-gap: 20px;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+	grid-template-columns: repeat(auto-fill, minmax(375px, 2fr));
 }
 .box > img {
 	width: 100%;
