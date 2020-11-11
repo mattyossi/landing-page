@@ -19,12 +19,12 @@ a {
 	text-decoration: none;	}
 
 .zone:hover {
-	-moz-box-shadow: 1px 1px 1px 1px #888888;
-	-ms-box-shadow: 1px 1px 1px 1px #888888;
-	-webkit-box-shadow: 1px 1px 1px 1px #888888;
-	-o-box-shadow: 1px 1px 1px 1px #8888888;
-	box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
-	opacity: 0.95;	}
+	-moz-box-shadow: 1px 1px 1px 1px #343a40;
+	-ms-box-shadow: 1px 1px 1px 1px #343a40;
+	-webkit-box-shadow: 1px 1px 1px 1px #343a40;
+	-o-box-shadow: 1px 1px 1px 1px #343a40;
+	box-shadow: 1px 1px 1px 1px #343a40;
+	opacity: 1;	}
 
 .stickyTop {
 	position: fixed;
@@ -52,22 +52,17 @@ li {
 
 
 /* iPhone X ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-/*Styles*/ 
-html {
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;	}
-body {
-	margin: auto 0;
-	font-family: arial;
-	background-image: url(./img/mining-excavator-1736293_1920.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;	}
-.nav-Link {
-	font-size: 1em; }
-}
+/*@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 812px) 
+	and (orientation : landscape) 
+	and (-webkit-device-pixel-ratio: 2) {
+		html {
+			-ms-text-size-adjust: none;
+			-webkit-text-size-adjust: none;	}
+		.nav-Link {
+			font-size: 1em; }
+	}*/
 
 /*---------------------
  Heading
@@ -75,6 +70,34 @@ body {
 .mainPicture {
 	height: 30vh;  /*will be 25% of the viewport height (window/browser)*/
 }
+.greet {
+	color: #b3ffe6;
+	margin-left: 20px;	}
+/*---------------------
+Current News
+---------------------*/
+.news {
+	color: #b3ffe6;
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	border border-radius: 10px;	}
+.news-grid {
+	display: grid;
+	align-items: center;
+	grid-column-gap: 8px;
+	grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));	}
+
+/*---------------------
+Success Story
+---------------------*/
+.s-story {
+	text-align: center;
+	color: #b3ffe6;	}
+.s-grid {
+	display: flex;
+	justify-content: center;
+	align-content: center; 
+	grid-auto-flow: column;	}
 
 /*---------------------
  Content
@@ -92,8 +115,8 @@ body {
 	opacity: 0.8;
 	padding: 50px;
 	margin: 15px;
-	border: 0.1px solid #a7a7a7;
-	border-radius: 10px;
+	border: none;
+	border-radius: 15px;
 }
 footer {
 	text-align: right;
